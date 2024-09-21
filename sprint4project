@@ -1,0 +1,4 @@
+import pandas as pd 
+pip install streamlit
+pip install plotly_express
+pip install altair[all
