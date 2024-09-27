@@ -34,7 +34,7 @@ vehicles_edited['model_year'].min()
 vehicles_edited['age_of_car']=vehicles_edited['year_posted']-vehicles_edited['model_year']
 
 
-# task 1 show your data
+# task 1 show data
 #Filter to find unique manufacturers
 manufacturer_choice=vehicles['manufacturer'].unique()
 
