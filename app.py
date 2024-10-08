@@ -4,7 +4,7 @@ import streamlit as st
 import plotly.express as px
 vehicles=pd.read_csv('./vehicles_us.csv')
 
-# Data clearning
+# Data cleaning
 #check for duplicates
 print(vehicles.duplicated().sum())
 #check for empty cells 
@@ -46,9 +46,10 @@ gas_type=vehicles.groupby('fuel').agg({'days_listed':'median'})
 #what is the most common color for an Acura 
 visual=vehicles_edited.groupby(['manufacturer','paint_color'])['paint_color'].count()
 visual.head()
+
+
+
 # task 2 draw a plot
-
-
 #plot vehicles types by manufacturer
 st.header('Market Details for Used Cars')
 st.write('Select the manufacturer from dopdown to filter data')
@@ -71,10 +72,12 @@ st.write('Find which factors influence price the most:transmission, fuel, body t
 list_for_hist=['transmission', 'fuel', 'type', 'condition']
 select_variable = st.selectbox('Select the factor to evaluate for price distribution', list_for_hist)
 
+
 #create a figure
 fig1 = px.histogram(vehicles, x='price', color=select_variable)
 fig1.update_layout(title="<b> Price effect of {}<b>".format(select_variable))
 st.plotly_chart(fig1)
+
 
 def age_of_car(x):
     if x<5: return '<5'
