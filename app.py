@@ -90,8 +90,13 @@ vehicles_edited['age_category']=vehicles_edited['age_of_car'].apply(age_of_car)
 
 list_for_scatter = ['odometer', 'cylinders', 'condition'] 
 choice_for_scatter = st.selectbox('Price dependency on', list_for_scatter)
+price_for_checkbox = st.checkbox('Default is Days Listed. Select checkbox to filter according to price.')
 
-fig2=px.scatter(vehicles_edited, x='price', y=choice_for_scatter, color='age_of_car')
-fig2.update_layout(title="<b> Price effect of {}<b>".format(choice_for_scatter))
+if price_for_checkbox:
+    fig2=px.scatter(vehicles_edited, x='price', y=choice_for_scatter, color='age_of_car')
+    fig2.update_layout(title="<b> Price based on {}<b>".format(choice_for_scatter))
+else:
+    fig2=px.scatter(vehicles_edited, x='days_listed', y=choice_for_scatter, color='age_of_car')
+    fig2.update_layout(title="<b> Days Listed based on {}<b>".format(choice_for_scatter))    
 
 st.plotly_chart(fig2)
