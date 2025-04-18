@@ -9,3 +9,10 @@ Does the age of the color influence the price?
 All code will then be committed and pushed to the GitHub repository where it will be accessible to other users.  The code will be utilized in Render to create interactive plots. 
 
 The render link is https://sprint4project-o0n1.onrender.com
+
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Platform](https://img.shields.io/badge/Platform-JupyterLab%20%7C%20Notebook-lightgrey.svg)
+![Status](https://img.shields.io/badge/Status-Exploratory-blueviolet.svg)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
