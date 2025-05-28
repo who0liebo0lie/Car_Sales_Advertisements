@@ -5,12 +5,38 @@ This project demonstrates full-stack data science and software development skill
 
 ---
 
-## 🎯 Project Purpose
+📊 From Listings to Insights: Understanding the Used Car Market with Python and Streamlit
+In a world where buying a used car can feel like a gamble, I wanted to understand: what really drives price—and how long a car sits unsold?
 
-The objective was to develop a data-driven web application and deploy it to a cloud platform so it could be publicly accessible for demonstration and stakeholder use. This project simulates a real-world data product pipeline: ingestion, cleaning, analysis, app development, and cloud deployment.
+This project dives into a dataset of over 50,000 used vehicle listings from the U.S., sourced from an online marketplace. With a focus on data cleaning, feature engineering, and interactive analysis, I built a Streamlit web app that lets users explore how car price is influenced by variables like mileage, condition, fuel type, and transmission.
+
+The app enables real-time exploration of questions like:
+
+Which manufacturers dominate which price ranges?
+
+Do diesel cars sell faster than gas?
+
+How does a car’s age or mileage affect resale value?
+
+Behind the scenes, I used Python (Pandas, Plotly) to clean and preprocess the data—handling missing values, parsing text columns, calculating car age, and grouping manufacturers. The UI, built in Streamlit, connects users to those insights with interactive plots and custom filters deployed through Render.
+
+This project doesn’t just show I can analyze data. It shows I can turn messy datasets into actionable tools, communicate results visually, and deploy them on the web—skills essential for building industry-grade ML and analytics products.
 
 ---
+### 🚀 Techniques Demonstrated in This Project
 
+| **Skill Area**           | **Tools / Techniques Used**                                                                                          | **Description**                                                                                      |
+|--------------------------|-----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| **Version Control**      | Git, GitHub                                                                                                           | Tracked changes, managed branches, and collaborated on codebase using Git and GitHub.                 |
+| **Web Deployment**       | Render, Streamlit, Command Line                                                                                       | Deployed an interactive Streamlit app using Render with CLI-based deployment workflows.               |
+| **Data Cleaning**        | Pandas                                                                                                                | Handled missing values, type conversion, duplicate removal, and feature engineering.                  |
+| **Data Visualization**   | Plotly, Streamlit                                                                                                     | Created interactive charts (histograms, scatter plots) for real-time exploratory data analysis.       |
+| **UI Components**        | Streamlit Widgets                                                                                                     | Integrated dropdowns, sliders, and checkboxes to dynamically filter data and update plots.            |
+| **Feature Engineering**  | Datetime, String Manipulation, Custom Functions                                                                       | Created new columns such as `age_of_car` and `age_category` for deeper analysis.                      |
+| **Exploratory Analysis** | Groupby operations, aggregations (median, sum, count)                                                                 | Investigated how fuel type, transmission, and vehicle age affect price and time-on-market.            |
+| **Reproducibility**      | .csv data handling, CLI startup, modular code structure                                                               | Ensured the app runs consistently with well-structured scripts and modular logic.                     |
+
+---
 ## 🔧 Tools & Technologies
 
 - **Languages & Libraries:** Python, `pandas`, `numpy`, `altair`, `plotly`, `scipy`, `streamlit`
